@@ -1,0 +1,54 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=YourSelectedFont1&family=YourSelectedFont2&display=swap');
+
+/* Define CSS variables for color scheme */
+:root {
+    --primary-color:#219EBC;
+    --secondary-color:#023047;
+    --text-color:#333;
+}
+
+/* Heading and Paragraph styles */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--primary-color);
+}
+
+P {
+    color: var(--text-color);
+}
+
+h1, article {
+    position: adsolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--primary-color);
+}
+
+/* I added colors to fonts */
+body {
+    color: var(--text-color);
+}
+
+.social-media-link {
+    text-decoration: none;
+}
+
+/* Limit the entire width of the page */
+.container {
+    max-width: 1200px; /* Adjust the value according to your design */
+    margin: 0 auto;
+}
+
+/* Style the Hero Container using Position */
+.hero-container {
+    position: relative;
+    background: var(--secondary-color);
+    color: #219EBC;
+    padding: 50px;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    display : block;
+}
