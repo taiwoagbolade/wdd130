@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=YourSelectedFont1&family=YourSelectedFont2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=font-name&display=swap');
 
 /* Define CSS variables for color scheme */
 :root {
@@ -17,8 +17,8 @@ P {
     color: var(--text-color);
 }
 
-h1, article {
-    position: adsolute;
+h1article {
+    position: absolute;
     top: 50%;
     transform: translate(-50%, -50%);
     color: var(--primary-color);
@@ -43,7 +43,7 @@ body {
 .hero-container {
     position: relative;
     background: var(--secondary-color);
-    color: #219EBC;
+    color: #fff;
     padding: 50px;
 }
 
@@ -51,4 +51,10 @@ body {
     position: relative;
     width: 100%;
     display : block;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
