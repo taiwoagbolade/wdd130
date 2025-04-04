@@ -1,0 +1,21 @@
+nav a
+#hero-msg h1, #hero-msg h4
+.button-box
+main section
+
+#background {
+  height: 725px;
+}
+body {
+  background-color:#ccc
+}
+header {
+  background-color:#5bc0eb
+}
+nav a:hover {
+  background-color: #fde74c
+}
+nav a:hover {
+  background-color:white
+  
+}
