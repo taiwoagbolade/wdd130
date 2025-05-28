@@ -1,0 +1,17 @@
+
+
+:root {
+    --primary-color: #5b96c2;
+    --secondary-color: #78A3BE; 
+    --background-color: #D5E1A3; 
+    --text-color: #E2F89C; 
+}
+h1 {
+    font-family: "Shrikhand", serif;
+    font-weight: 100;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+     font-weight: 400;
+}
