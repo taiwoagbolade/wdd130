@@ -1,17 +1,119 @@
-
-
 :root {
-    --primary-color: #5b96c2;
-    --secondary-color: #78A3BE; 
-    --background-color: #D5E1A3; 
-    --text-color: #E2F89C; 
-}
-h1 {
-    font-family: "Shrikhand", serif;
-    font-weight: 100;
+    --primary-color: #5B96C2;
+    --secondary-color: #78A3BE;
+    --accent1-color: #D5E1A3;
+    --accent2-color: #E2F89C;
+    --heading-font: 'Shrikhand', cursive;
+    --body-font: 'Montserrat', sans-serif;
 }
 
+/* Reset Box Model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styles */
 body {
-    font-family: "Montserrat", sans-serif;
-     font-weight: 400;
+    font-family: var(--body-font);
+    color: var(--accent-color);
+    background-color: #fff;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color);
+    color:var(--accent2-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+header img {
+    height: 60px;
+}
+
+nav a {
+    color: var(--accent2-color);
+    text-decoration: none;
+    margin-left: 16px;
+    font-weight: bold;
+}
+
+/* Typography */
+h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+}
+
+nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: val(--accent1-color);
+    color: #fff;
+    font-size: 2rem;
+}
+
+.hero article {
+    position: absolute;
+    bottom:20px;
+    left: 20px;
+    background-color: rgba(255,255,255, 0.85);
+    padding: 16px;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 12px;
+    border-radius: 8px;
+}
+
+/* Section: Adventure Image */
+section img {
+    width: 150px;
+    margin: 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* footer */
+footer {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+    text-align: center;
+    padding: 16px;
+}
+
+.socialmedia {
+    margin-top: 12px;
+}
+
+.socialmedia a {
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.socialmedia img {
+    width: 32px;
+    height: 32px;
 }
