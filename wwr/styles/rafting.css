@@ -24,62 +24,96 @@ body {
 
 /* Header */
 header {
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    padding: 10px 16px;
     background-color: var(--primary-color);
     color:var(--accent2-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
+    text-align: center;
 }
 
 header img {
     height: 60px;
+    margin-bottom: 8px;
 }
+
+header h1 {
+    font-family: var(--heading1-font);
+    font-size: 2rem;
+    color: var(--accent2-color);
+    margin-bottom: 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
 
 nav a {
-    color: var(--accent2-color);
+    background-color: white;
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 6px;
     text-decoration: none;
-    margin-left: 16px;
     font-weight: bold;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
 }
 
+nav a:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
 /* Typography */
-h1 {
-    font-family: var(--heading1-font);
-    font-size: 2.5rem;
-    margin-bottom: 0.5em;
+h1, h2 {
     text-align: center;
-    color: #03045E;
+    color: #03045E; 
+}
+
+h1 {
+    font-family: var(--heading2-font);
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
 }
 
 h2 {
-  font-family: var(--heading2-font);
-  font-size: 2rem;
-  color: #03045E;
-  margin-top: 2em;
-  margin-bottom: 0.5em;
-}
-
-p, section, article {
-    margin: 16px;
-    padding: 8px;
+    font-family: var(--heading2-font);
+    font-size: 2rem;
+    margin: 2rem 0 1rem;
 }
 
 /* Hero Section */
 .hero {
     position: relative;
+    width: 100%;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    z-index: 2;
 }
 
 .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
+    background-color: rgba(0, 0, 0, 0.5);
     color: #fff;
-    font-size: 2rem;
+    padding: 12 
 }
 
 .hero article {
@@ -91,6 +125,7 @@ p, section, article {
     max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index:2;
 }
 
 .hero article img {
@@ -100,25 +135,68 @@ p, section, article {
     border-radius: 8px;
 }
 
-/* Section: Adventure Image */
-section img {
+/* History Section */
+.history {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 16px;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.history-grid img {
+    max-width: 100%;
+    display: block;
+    border-radius: 8px;
+}
+
+/* Adventures Section */
+.adventures {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 16px;
+    text-align: center;
+    padding: 16px;
+}
+
+.adventures figure {
     width: 150px;
-    margin: 8px;
+    margin: 0;
+}
+
+adventures img {
+    width: 100%;
+    height: auto;
     border-radius: 6px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    box-shadow: 0 2px 6px rgb(0, 0, 0, 0.15);;
+}
+
+.adventures figcaption {
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: #444;
 }
 
 /* footer */
 footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: var(--primary-color);
     color: var(--accent2-color);
-    text-align: center;
     padding: 16px;
     font-size: 0.9rem;
-    margin-top: 3em;
+}
+
+footer .socialmedia {
+    display: flex;
+    gap: 1em;
+    margin-top: 10px;
 }
 
 footer .socialmedia img {
     width: 24px;
-    margin: 0 0.5em;
 }
